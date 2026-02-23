@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChattingApp</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="app-header">
+        <h1>ChattingApp</h1>
+        <p>A lightweight demo chat experience.</p>
+      </header>
+
+      <section class="chat-panel" aria-label="Chat panel">
+        <ul id="messages" class="messages" aria-live="polite"></ul>
+
+        <form id="composer" class="composer" autocomplete="off">
+          <label for="username" class="sr-only">Username</label>
+          <input id="username" name="username" placeholder="Your name" maxlength="20" required />
+
+          <label for="message" class="sr-only">Message</label>
+          <input id="message" name="message" placeholder="Type a message..." maxlength="180" required />
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
